@@ -1,16 +1,16 @@
 inc:
   # Blog Information
-  title:        "Jekyll Incorporated"
-  subtitle:     "Modern Jekyll based blog for companies"
-  cover_image:  blog-cover.jpg
+  title:        "Samsara"
+  subtitle:     "Lightning fast analytics"
+  cover_image:  analytics-cover.jpg
   logo:         logo.png
   
   # Company information
   company:      Incorporated
-  url:          http://sendtoinc.com/
-  facebook:     sendtoinc
-  twitter:      sendtoinc
-  gplus:        '101183822199340201470'
+  url:          https://github.com/samsara/
+  #facebook:     sendtoinc
+  #twitter:      sendtoinc
+  #gplus:        '101183822199340201470'
   about_link:   https://sendtoinc.com/about/
   
   # Product Information
