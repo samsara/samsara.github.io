@@ -2,6 +2,13 @@
 Modern Jekyll based blog and website for Samsara. 
 Selected theme: [blog.sendtoinc.com](http://blog.sendtoinc.com)
 
+   _____                                      
+  / ___/____ _____ ___  _________ __________ _
+  \__ \/ __ `/ __ `__ \/ ___/ __ `/ ___/ __ `/
+ ___/ / /_/ / / / / / (__  ) /_/ / /  / /_/ / 
+/____/\__,_/_/ /_/ /_/____/\__,_/_/   \__,_/  
+                                              
+
 
 ## Installation & Usage
 _Note: The default branch for this repo is 'source'. The source should always be kept here. Running rake site:publish will generate the site and push to master. __
