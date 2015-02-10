@@ -5,9 +5,10 @@ Selected theme: [blog.sendtoinc.com](http://blog.sendtoinc.com)
 
 ## Installation & Usage
 _Note: The default branch for this repo is 'source'. The source should always be kept here. Running rake site:publish will generate the site and push to master. __
-    bundle install
-    jekyll serve --watch
-
+``` 
+bundle install
+jekyll serve --watch
+``` 
 _Note: Requires Ruby version 1.9.3 =>. For example use [rbenv](https://github.com/sstephenson/rbenv)_   
     
 ## Configuration
