@@ -4,42 +4,42 @@ inc:
   subtitle:     "Lightning fast analytics"
   cover_image:  analytics-cover.jpg
   logo:         logo.png
-  
+
   # Company information
-  company:      Incorporated
+  company:      "Samsara team"
   url:          https://github.com/samsara/
   #facebook:     sendtoinc
   #twitter:      sendtoinc
   #gplus:        '101183822199340201470'
   #TODO: Add about page.
   about_link:   https://github.com/samsara
-  
+
   # Product Information
   product_link: https://github.com/samsara
   tagline:      ""
-  
+
   # Comments
   disqus:
     # Eg. "exampleblog" Set to false to disable comments
     shortname:  false
-  
+
   # Sharing settings
   sharing:
     twitter:    false
     facebook:   false
     gplus:      false
     hn:         false
-    
-  
- # Analytics     
+
+
+ # Analytics
   analytics:
     google: false # Add tracking code in _includes/_google-analytics.html
-      
-      
+
+
   # Google Fonts
   # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Droid+Sans:400,700'
-  
+
   # Setup your fonts, colors etc at _assets/stylesheets/main.scss
 
 url:         https://github.com/samsara
@@ -55,7 +55,7 @@ timezone:    nil
 future:      false
 show_drafts: nil
 limit_posts: 0
-pygments:    true
+highlighter: pygments
 
 relative_permalinks: true
 
@@ -63,7 +63,7 @@ permalink:     pretty
 paginate_path: 'page:num'
 paginate: 10
 
-markdown:      maruku
+markdown:      kramdown
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 
