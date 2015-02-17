@@ -2,10 +2,10 @@
 layout: post
 
 title: Overall architecture
-subtitle: 
+subtitle: "An high level description of Samsara's components and how they play together" 
 cover_image: 
 
-excerpt: "An high level description of Samsara's components and how they play together"
+excerpt: 
 
 author:
   name: Bruno Bonacci
