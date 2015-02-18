@@ -32,12 +32,6 @@ Run rake task. **NOTE: It will deploy the generated site to _gh-pages_ branch ov
 rake site:publish
 ```
 
-## Todo:
-
-+ Documentation
-+ Less config files
-+ Better deploy scripts
-
 ## Copyright and license
 
 Copyright 2015 Samsara's team under [Apache v2.0](LICENSE)
