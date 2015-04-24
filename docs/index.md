@@ -10,6 +10,7 @@ __Design documents:__
 
   * [Overall Architecture](architecture)
   * Events format specification
+  * Client libraries
   * How to scale the system
   
 __Getting started:__
