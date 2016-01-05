@@ -28,5 +28,3 @@ Samsara provides clients for various languages and platforms. This will help you
 | Ruby       | Coming soon | Y            | Y             | N           | N        |
 | Javascript | Coming soon | Y            | Y             | N           | N        |
 | Java       | Coming soon | Y            | Y             | N           | N        |
-
-
