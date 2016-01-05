@@ -20,11 +20,11 @@ Samsara provides clients for various languages and platforms. This will help you
 
 ## Feature Matrix
 
-| Client     | Available   | Bulk Publish | Buffer events | Device Info | Location |
-| | | | | |
-| Clojure    | Y           | Y            | Y             | N           | N        |
-| iOS        | Y           | Y            | Y             | Y           | Y        |
-| Android    | Coming soon | Y            | Y             | Y           | Y        |
-| Ruby       | Coming soon | Y            | Y             | N           | N        |
-| Javascript | Coming soon | Y            | Y             | N           | N        |
-| Java       | Coming soon | Y            | Y             | N           | N        |
+| Client     | Available   | Bulk Publish | Buffer events | Compression | Device Info | Location |
+| | | | | | |
+| Clojure    | Y           | Y            | Y             | GZIP        | N           | N        |
+| iOS        | Y           | Y            | Y             | N           | Y           | Y        |
+| Android    | Coming soon | | | | | |
+| Ruby       | Coming soon | | | | | |
+| Javascript | Coming soon | | | | | |
+| Java       | Coming soon | | | | | |
