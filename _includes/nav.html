@@ -1,0 +1,39 @@
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">{{ site.title }}</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li {% if page.nav == "home" %} class="active" {% endif %}><a href="/">Home</a></li>
+                <li {% if page.nav == "documentation" %} class="active" {% endif %} class="dropdown">
+                  <a href="/docs/architecture" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/docs/architecture">Architecture</a></li>
+                    <li><a href="/docs/quick-start">Quick Start</a></li>
+                    <li><a href="/docs/ingestion-api-events">Events & Ingestion API</a></li>
+                    <li><a href="/docs/clients">Clients</a></li>
+                    <li><a href="/docs/samsara-core">Samsara Core</a></li>
+                    <li><a href="/docs/cloud-templates">Cloud Templates</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://github.com/samsara" target="_blank">Source @ Github</a>
+                </li>
+                <li {% if page.nav == "about" %} class="active" {% endif %}><a href="/about">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>

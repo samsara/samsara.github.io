@@ -1,0 +1,9 @@
+// All tables within container should extend bootstrap table class
+//
+
+table {
+  @extend .table;
+  @extend .table-bordered;
+  @extend .table-condensed;
+  @extend .table-responsive;
+}

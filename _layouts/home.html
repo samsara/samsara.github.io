@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <!-- NAVBAR
+       ================================================== -->
+  <body>
+
+    {% include nav.html %}
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    {% include jumbotron.html %}
+
+    <!-- Marketing messaging and featurettes
+         ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      {{ content }}
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+        </small>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="{{ site.baseurl }}/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

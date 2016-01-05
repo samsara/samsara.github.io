@@ -4,15 +4,14 @@ layout: default
 
 <!-- Button Group Here -->
 <div class="btn-group pull-right" role="group" aria-label="">
-{% for tab_bar in site.tab_bars %}
-   {% if page.tab_bar == tab_bar.id %}
-      {% for client in tab_bar.items %}
+  {% for tab_bar in site.tab_bars %}
+      {% if page.tab_bar == tab_bar.id %}
+        {% for client in tab_bar.items %}
           <a class="btn btn-default  {% if page.url == client.page %} active {% endif %}" href="{{ client.page }}">{{ client.title }}</a>
       {% endfor %}
-   {% endif %}
-{% endfor %}
+    {% endif %}
+  {% endfor %}
 </div>
-
 
 <article class="page">
   {{ content }}

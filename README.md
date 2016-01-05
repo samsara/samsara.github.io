@@ -1,38 +1,39 @@
 # Samsara Website
 
-Content of Samsara's Website.
+Samsara uses Jekyll and GitHub pages for its website. 
 
-Selected theme: [blog.sendtoinc.com](http://blog.sendtoinc.com)
 
-<pre>
-   _____                                      
-  / ___/____ _____ ___  _________ __________ _
-  \__ \/ __ `/ __ `__ \/ ___/ __ `/ ___/ __ `/
- ___/ / /_/ / / / / / (__  ) /_/ / /  / /_/ / 
-/____/\__,_/_/ /_/ /_/____/\__,_/_/   \__,_/  
-                                              
-</pre>
+## Usage
 
-## Installation & Usage
-_Note: The default branch for this repo is 'source'. The source should always be kept here. Running rake site:publish will generate the site and push to master. __
-``` 
-bundle install
-jekyll serve --watch
-``` 
-_Note: Requires Ruby version 1.9.3 =>. For example use [rbenv](https://github.com/sstephenson/rbenv)_   
-    
-## Configuration
-Edit: _config.yml (general options), main.css (theme colors &amp; fonts)
+### 1. Install dependencies
 
-_Note: when editing _config.yml, you need to restart jekyll to see the changes.__
+The website is built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the Jekyll gem:
 
-    
-Run rake task. **NOTE: It will deploy the generated site to _gh-pages_ branch overwriting it**    
-``` 
-rake site:publish
+```bash
+$ gem install jekyll
 ```
 
-## Copyright and license
+**Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
 
-Copyright 2015 Samsara's team under [Apache v2.0](LICENSE)
+
+### 2. Running locally
+
+To see your Jekyll site, start a Jekyll server. In Terminal, from the `/samsara.github.io` directory (or whatever your Jekyll site's root directory is named):
+
+```bash
+$ jekyll serve
+```
+
+Open <http://localhost:4000> in your browser, and voilà.
+
+### 4. Serving it up
+
+If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
+
+1. Fork this repo and switch to the `gh-pages` branch.
+  1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
+2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. **Be sure to include the trailing slash.**
+3. Done! Head to your GitHub Pages URL or custom domain.
+
+No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
 

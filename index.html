@@ -1,54 +1,74 @@
 ---
-layout: base
+layout: home
+title: Samsara
+subtitle: Samsara is an open source real-time analytics platform.
+nav: home
 ---
-<div class="blog-cover" style="background-image:url(/images/{{ site.inc.cover_image }});">
-    
-    <section>
-        <div class="container">
-            <h1>{{ site.inc.title }}</h1>
-            {% if site.inc.subtitle %}<h3>{{ site.inc.subtitle }}</h3>{% endif %}
-        
-            {% if site.inc.twitter %}
-            <a href="https://twitter.com/{{ site.inc.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a>
-            {% endif %}
-            {% if site.inc.facebook %}
-            <a href="http://facebook.com/{{ site.inc.facebook }}" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a>
-            {% endif %}
-            <a href="/feed.xml" title="RSS Feed">
-                <i class="icon icon-rss"></i>
-            </a>
-        </div>
-    </section>
+
+
+<!-- Three columns of text below the carousel -->
+<div class="row">
+  <!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="img-circle" src="/img/performance-icon.png" alt="Breakthrough performance" width="140" height="140">
+    <h2>Performance</h2>
+    <p>Samsara offers break-through real-time performance with the ability to process and index terabytes of data. Samsara core can process 6300 events per second.</p>
+    <p><a class="btn btn-default" href="https://github.com/samsara" role="button">View details &raquo;</a></p>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="img-circle" src="/img/osi.png" alt="Opensource icon" width="140" height="140">
+    <h2>Open Source</h2>
+    <p>Samsara is fully built using cutting-edge open source technology. All components of Samsara including the clients are fully open source under Apache Licence.</p>
+    <p><a class="btn btn-default" href="https://github.com/samsara" role="button">View details &raquo;</a></p>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="img-circle" src="/img/cloud-icon.png" alt="Cloud Icon" width="140" height="140">
+    <h2>Cloud Native</h2>
+    <p>Samsara is fully cloud native. Samsara provides out-of-the-box deployment templates for Amazon EC2, Amazon ECS and Kubernetes platforms.</p>
+    <p><a class="btn btn-default" href="https://github.com/samsara" role="button">View details &raquo;</a></p>
+  </div>
+</div><!-- /.row -->
+
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading">Breakthrough Performance. <span class="text-muted">It'll blow your mind.</span></h2>
+    <p class="lead">
+      Samsara offers break-through real-time performance with the ability to process and index terabytes of data. Samsara API handles around 1500 HTTP requests per second, ingesting over 175GB of data into Kafka per day. Samsara core can process 550 million events a day.
+    </p>
+  </div>
+  <div class="col-md-5">
+    <!--img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"-->
+  </div>
 </div>
 
+<hr class="featurette-divider">
 
-<article class="container">
-{% for post in paginator.posts %}
-  {% unless post.draft %}
-    <section class="index">
-        <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
-        <div>
-            <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-            <p>{{ post.excerpt }}</p>
-            <div class="meta">
-                Written By <address>{{ post.author.name }}</address> &mdash;
-                <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-            </div>
-        </div>
-        <hr>
-    </section>
-    {% endunless %}
-    {% endfor %}
-    <section class="pagination" style="text-align:center">
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a href="/" class="btn btn-outline">‹ Newer</a>
-        {% else %}
-        <a href="/page{{ paginator.previous_page }}" class="btn btn-outline">‹ Newer</a>
-        {% endif %}
-      {% endif %}
-      {% if paginator.next_page %}
-        <a href="/page{{ paginator.next_page }}" class="btn btn-outline">Older ›</a>
-      {% endif %}
-    </section>
-</article>
+<div class="row featurette">
+  <div class="col-md-7 col-md-push-5">
+    <h2 class="featurette-heading">Clients for many languages.<span class="text-muted">Start publishing events right away.</span></h2>
+    <p class="lead">Samsara provides clients for various languages and platforms allowing you to focus on your functionality. Wer are always adding new clients, so if you would like a client for the language you use, just drop us a note.</p>
+  </div>
+  <div class="col-md-5 col-md-pull-7">
+    <!-- img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"-->
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading">Out of the box deployment templates for the cloud. <span class="text-muted">You can have your cake and eat it too !</span></h2>
+    <p class="lead">Samsara is fully cloud native. Samsara provides out-of-the-box deployment templates for Amazon EC2, Amazon ECS and Kubernetes platforms.</p>
+  </div>
+  <div class="col-md-5">
+    <!-- img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image" -->
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<!-- /END THE FEATURETTES -->

@@ -1,11 +1,8 @@
 ---
-layout: post
-
-title: Overall architecture
+layout: page
+title: Architecture
 subtitle: "An high level description of Samsara's components and how they play together" 
-cover_image: 
-
-excerpt: 
+nav: documentation
 
 author:
   name: Bruno Bonacci
@@ -39,7 +36,7 @@ the live index and query APIs, and the frontend data exploration tool_.
 
 There are several other components which are used for internal house keeping.
 
-![Overall Architecture](/images/overall_architecture.png)
+![Overall Architecture](/img/architecture.png)
 
 At the top of the stack we find the `Ingestion APIs`.
 This tier is an elastically scalable layer of RESTful web services.
@@ -82,15 +79,17 @@ The following table shows which native components can be used in a cloud solutio
 
 
 | Component    | Amazon Web Services | Azure Cloud        |
-|--------------+---------------------+--------------------|
+|--------------|---------------------|--------------------|
 | Kafka        | Amazon Kinesis      | EventsHub          |
 | Cassandra    | Amazon DynamoDB     | Azure Table        |
 | Deep storage | Amazon S3           | Azure Blob Storage |
-|              |                     |                    |
+
+
 
 When running in the cloud is always better to use the load balancers offered,
 unless you expect your traffic to have long flat lines followed by huge spikes.
 In that case it is better to run your own load balancers and we recommend
 [HAProxy](http://www.haproxy.org/).
+
 
 
