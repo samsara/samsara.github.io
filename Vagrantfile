@@ -7,6 +7,6 @@ Vagrant.configure("2") do |config|
   end
   config.vm.network :forwarded_port, host: 4000, guest: 4000
   config.vm.provision :shell,
-                      :inline => "/vagrant/vagrant/setup.sh"
+                      :inline => "sudo -u vagrant /vagrant/vagrant/setup.sh"
 
 end
