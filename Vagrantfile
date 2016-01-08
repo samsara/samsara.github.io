@@ -5,8 +5,9 @@ Vagrant.configure("2") do |config|
     v.memory = 1024
     v.cpus = 2
   end
+  config.vm.boot_timeout = 1000
   config.vm.network :forwarded_port, host: 4000, guest: 4000
-  config.vm.provision :shell,
-                      :inline => "sudo -u vagrant /vagrant/vagrant/setup.sh"
+  config.vm.provision :shell, :privileged => false, 
+                      :inline => "sudo -u vagrant /vagrant/vagrant/setup.sh" 
 
 end

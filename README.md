@@ -1,6 +1,6 @@
 # Samsara Website
 
-Samsara uses Jekyll and GitHub pages for its website. 
+Samsara uses Jekyll and GitHub pages for its website.
 
 
 ## Usage
@@ -21,7 +21,8 @@ $ gem install jekyll
 To see your Jekyll site, start a Jekyll server. In Terminal, from the `/samsara.github.io` directory (or whatever your Jekyll site's root directory is named):
 
 ```bash
-$ jekyll serve
+$ bundle install
+$ bundle exec jekyll serve
 ```
 
 Open <http://localhost:4000> in your browser, and voilà.
@@ -36,4 +37,3 @@ If you host your code on GitHub, you can use [GitHub Pages](https://pages.github
 3. Done! Head to your GitHub Pages URL or custom domain.
 
 No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
-
