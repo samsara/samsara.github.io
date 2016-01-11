@@ -37,3 +37,15 @@ If you host your code on GitHub, you can use [GitHub Pages](https://pages.github
 3. Done! Head to your GitHub Pages URL or custom domain.
 
 No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
+
+### 5. To update the Documentation
+
+The master copy of the documentation contained in `docs/` is the
+homonym folder of the **samsara/samsara** project. So if you want to
+update the docs please update it in the main samsara project, then to
+publish the documentation copy the new version of the documents here
+with:
+
+    ./bin/update-docs.sh ../samsara/
+
+and commit the changes.
