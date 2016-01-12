@@ -32,9 +32,9 @@ tab_bars:
 - id: clients
   items:
   - title: iOS
-    page: /docs/ios-client/
+    page: /docs/clients/ios-client/
   - title: Clojure
-    page: /docs/clojure-client/
+    page: /docs/clients/clojure-client/
 
 # Markdown and code
 markdown:            rdiscount
