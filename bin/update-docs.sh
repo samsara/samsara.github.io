@@ -20,5 +20,5 @@ else
     # [title](/actual/path/to/file.md) while the same link in jekyll is:
     # [title](/actual/path/to/file)  WITHOUT the .md
     # so we make this transformation here.
-    find $(dirname $0)/../docs/ -name \*.md | xargs -I{} sed -i '' -E 's/\.md\)/)/g' {}
+    find $(dirname $0)/../docs/ -name \*.md | xargs -I{} sed -i -r 's/\.md\)/)/g' {} 
 fi
