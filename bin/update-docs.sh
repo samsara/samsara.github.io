@@ -10,6 +10,12 @@ if [ "$1" = "" ] ; then
     echo "   $0 ../samsara"
     exit 1
 else
+    if [ `uname` = "Darwin" ] ; then
+        export SED=gsed
+    else
+        export SED=sed
+    fi
+
     # copy the documentation from samsara
     cp -r $1/docs/* $(dirname $0)/../docs/
 
@@ -20,5 +26,5 @@ else
     # [title](/actual/path/to/file.md) while the same link in jekyll is:
     # [title](/actual/path/to/file)  WITHOUT the .md
     # so we make this transformation here.
-    find $(dirname $0)/../docs/ -name \*.md | xargs -I{} sed -i -r 's/\.md\)/)/g' {} 
+    find $(dirname $0)/../docs/ -name \*.md | xargs -I{} $SED -i -r 's/\.md\)/)/g' {}
 fi
