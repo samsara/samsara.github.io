@@ -35,6 +35,8 @@ tab_bars:
     page: /docs/clients/ios-client/
   - title: Clojure
     page: /docs/clients/clojure-client/
+  - title: Logger
+    page: /docs/clients/logger-client/
 
 # Markdown and code
 markdown:            rdiscount
