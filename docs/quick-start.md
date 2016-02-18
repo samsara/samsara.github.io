@@ -51,8 +51,8 @@ when the service is ready you will see the following message:
 Once the service is up and running you can then access the following
 main services
 
-| service       |               port                               |
-|---------------|:------------------------------------------------:|
+| service       | port                                             |
+|---------------|--------------------------------------------------|
 | ingestion-api | [http://127.0.0.1:9000](http://127.0.0.1:9000)   |
 | kibana        | [http://127.0.0.1:8000 ](http://127.0.0.1:8000)  |
 | graphana	| [http://127.0.0.1:15000](http://127.0.0.1:15000) |
@@ -210,8 +210,8 @@ when the service is ready you will see the following message:
 Once the service is up and running you can then access the following
 main services
 
-| service       |               port                               |
-|---------------|:------------------------------------------------:|
+| service       | port                                             |
+|---------------|--------------------------------------------------|
 | ingestion-api | [http://192.168.59.103:9000](http://192.168.59.103:9000)   |
 | kibana        | [http://192.168.59.103:8000 ](http://192.168.59.103:8000)  |
 | graphana      | [http://192.168.59.103:15000](http://192.168.59.103:15000) |
