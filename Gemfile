@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'jekyll', '~> 3.0'
 gem 'jekyll-assets'
+gem 'jekyll-paginate'
+gem 'jekyll-gist'
 gem 'maruku'
 gem 'rake'
 gem 'sass'
