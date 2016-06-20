@@ -5,5 +5,5 @@ subtitle:
 nav: documentation
 ---
 
-Please read the [design principles](./design-principles). More doc
+Please read the [design principles](/docs/design/design-principles). More doc
 coming soon.
