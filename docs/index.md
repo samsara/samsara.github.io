@@ -16,6 +16,7 @@ __Design documents:__
 
   * [Design principles](design/design-principles)
   * [Events format specification](design/events-spec)
+  * [Clients design](design/clients-design)
   * [Ingestion API](design/ingestion-api)
   * How to scale the system
 
