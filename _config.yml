@@ -32,10 +32,12 @@ author:
 tab_bars:
 - id: clients
   items:
-  - title: iOS
-    page: /docs/clients/ios-client/
   - title: Clojure
     page: /docs/clients/clojure-client/
+  - title: Python
+    page: /docs/clients/python-client/
+  - title: iOS
+    page: /docs/clients/ios-client/
   - title: Logger
     page: /docs/clients/logger-client/
 
@@ -47,4 +49,3 @@ highlighter:         rouge
 gems:
 - jekyll-gist
 - jekyll-paginate
-
