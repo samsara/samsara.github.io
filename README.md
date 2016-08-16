@@ -2,6 +2,7 @@
 
 Samsara uses Jekyll and GitHub pages for its website.
 
+[http://samsara-analytics.io/](http://samsara-analytics.io/)
 
 ## Usage
 
