@@ -7,9 +7,13 @@ tab_bar: clients
 ---
 
 ## Clients
-Samsara provides clients for various languages and platforms. This will help you start publishing events to Samsara in no time. The features clients offer are listed below.
+Samsara provides clients for various languages and platforms. This
+will help you start publishing events to Samsara in no time. The
+features clients offer are listed below.
 
-If you want to find more about the clients you can read the [clients common design principles](/docs/design/clients-design) document.
+If you want to find more about the clients you can read
+the [clients common design principles](/docs/design/clients-design)
+document.
 
 ## Features
 * Handle connectivity to the API.
