@@ -5,9 +5,9 @@ subtitle: Troubleshooting system errors.
 nav: documentation
 ---
 
-# Samsara CORE
+## Samsara CORE
 
-## clj-http error
+### clj-http error
 
 There is a known error appearing when including `[samsara/samsara-client "0.5.5.0"]` and `[samsara/moebius "0.5.5.0"]`.
 The incompatibility seems to be between `[clj-http "2.0.0"]` and `[potemkin "0.3.13"]` as other people have reported [elsewhere](https://github.com/dakrone/clj-http/issues/335).
@@ -25,7 +25,7 @@ Caused by: java.lang.NoClassDefFoundError: IllegalName: compile__stub.clj_http.h
 	... 155 more
 ```
 
-### Solution
+#### Solution
 
 Add an explicit `potemkin` dependency in your `project.clj`
 
