@@ -29,6 +29,8 @@ tab_bars:
     page: /docs/clients/clojure-client/
   - title: Python
     page: /docs/clients/python-client/
+  - title: Go
+    page: /docs/clients/go-client/
   - title: Ruby
     page: /docs/clients/ruby-client/
   - title: iOS
