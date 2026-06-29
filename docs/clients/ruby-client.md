@@ -76,7 +76,7 @@ Note that `publish_events` method signature is `Array<Hash>` so if you want to s
 it should be wrapped in array as well.
 
 Also please note that `record_event` and `publish_events` can raise `SamsaraSDK::EventValidationError`
-if any of the given events doesn't conform Event specification.
+if any of the given events doesn't conform to the Event specification.
 
 ### SourceID
 
@@ -98,7 +98,7 @@ Here some examples of **good** choices for `sourceId`:
   - a customer or client id for a web application
   - a userid for a web service
 
-Here some examples of **BAD** bad choices for `sourceId`:
+Here some examples of **BAD** choices for `sourceId`:
 
   - a web service name, because it is a low cardinality. This means
     that all events coming from a particular webservice will be
@@ -110,13 +110,13 @@ Here some examples of **BAD** bad choices for `sourceId`:
     id (PID) to the name (such as:
     "com.example.api.user-service:56789")
 
-  - a randomly generate id which is not persitsed and regenerated on
+  - a randomly generated id which is not persisted and regenerated on
     every use.  This is bad because it doesn't allow you to trace an
     history of the events and make meaningful correlations.
 
   - same it will happen if the sourceId is not unique. Events from
     multiple different sources will mix together generating an
-    undistiguishable events soup
+    undistinguishable events soup
 
 
 ### Advanced configuration
